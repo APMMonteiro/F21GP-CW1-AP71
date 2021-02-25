@@ -65,7 +65,7 @@ public class PlayerMovementScript : MonoBehaviour
     void OnControllerColliderHit(ControllerColliderHit c)
     {
         if (c.gameObject.tag == "Obstacle"){
-            if (state == 4)
+            if (state == 3)
             {
                 c.gameObject.GetComponent<PushBarBackNForth>().playerHit();
             }
